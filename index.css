@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: grid;
+    grid-template-areas: "esquerdo meio direito"
+                         "esquerdo meio direito"
+                         "esquerdo meio direito";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 240px 240px 240px;
+    padding: 2px;
+}
+
+.esquerdo {
+    background-color: white;
+    padding-top: 20px;
+    grid-area: esquerdo;
+    display: grid;
+    grid-template-areas: "esquerdo1"
+                         "esquerdo2"
+                         "esquerdo3";
+    grid-template-rows: 150px 250px 350px;
+}
+
+.esquerdo1 {
+    grid-area: esquerdo1;
+    margin-top: -20px;
+}
+
+.esquerdo2 {
+  background-color: yellow;
+  grid-area: esquerdo2;
+  padding-top: 20px;
+}
+
+.pesquerdo {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.esquerdo3 {
+    background-color: greenyellow;
+    grid-area: esquerdo3;
+}
+
+.meio {
+    display: grid;
+    grid-template-areas: "meio1"
+                         "meio2"
+                         "meio3";
+    grid-template-rows: 125px 500px 100px;
+}
+
+.meio1 {
+    background-color: red;
+    grid-area: meio1;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    align-items: center;
+}
+
+.meio2 {
+    background-color: pink;
+    grid-area: meio2;
+}
+
+.meio3 {
+    background-color: green;
+    grid-area: meio3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.direito {
+    background-color: yellow;
+    grid-area: direito;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.pdireito {
+    padding-bottom: 20px;
+}
